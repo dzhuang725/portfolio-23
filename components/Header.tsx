@@ -30,16 +30,6 @@ function header({}: Props) {
           fgColor="gray"
           bgColor="transparent"
         />
-        <SocialIcon
-          url="https://github.com/dzhuang725"
-          fgColor="gray"
-          bgColor="transparent"
-        />
-        <SocialIcon
-          url="https://github.com/dzhuang725"
-          fgColor="gray"
-          bgColor="transparent"
-        />
       </motion.div>
 
       {/* <Link href="#contact"> */}
