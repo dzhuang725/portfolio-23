@@ -7,7 +7,11 @@ type Props = {};
 
 function Hero({}: Props) {
   const [text, count] = useTypewriter({
-    words: ["Hi, My Name is Weiqi Zhuang", "UI/UX Developer at BoardX"],
+    words: [
+      "Hi, My Name is Weiqi Zhuang",
+      "Software Develoepr at BeaconFire",
+      "UX Engineer in progress",
+    ],
     loop: true,
     delaySpeed: 2000,
   });
@@ -21,9 +25,9 @@ function Hero({}: Props) {
         alt=""
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
+        {/* <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           Software Engineer
-        </h2>
+        </h2> */}
         <h1 className="text-5xl lg:text-6xl font-semibold px-10">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#F7AB0A" />
