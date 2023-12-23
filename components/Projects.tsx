@@ -9,7 +9,7 @@ function Projects({}: Props) {
       id: "1",
       name: "Purdue Farmers' Market iOS App",
       detail:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "An iOS App for Purdue Farmers' Market. Started during pandemic where beloved Farmers' Market was cancelled in person. The app shows Farmers and their products so Customer knows what's on the market.",
       imageUrl: "https://i.imgur.com/XOayjy8.jpg",
     },
     {
@@ -58,7 +58,7 @@ function Projects({}: Props) {
             items-center justify-center p-20 md:p-44 h-max"
             key={project.id}
           >
-            <motion.img
+            {/* <motion.img
               initial={{
                 y: -300,
                 opacity: 0,
@@ -69,13 +69,13 @@ function Projects({}: Props) {
               src={project.imageUrl}
               alt=""
               className="h-max w-max "
-            />
+            /> */}
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-4xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
-                  Case Study {i + 1} of {projects.length}
+                  Project {i + 1} of {projects.length}
                 </span>{" "}
-                : {project.name}
+                : {"\n"} {project.name}
               </h4>
 
               <p className="text-lg text-center md:text-left">
