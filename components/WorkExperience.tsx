@@ -8,6 +8,7 @@ type Props = {};
 function WorkExperience({}: Props) {
   const experiences: Experience[] = [
     {
+      id: "1",
       title: "Software Developer",
       company: "BeaconFire",
       startTime: "July 2023",
@@ -18,6 +19,7 @@ function WorkExperience({}: Props) {
       ],
     },
     {
+      id: "2",
       title: "UX Developer",
       company: "BoardX",
       startTime: "July 2022",
@@ -30,6 +32,7 @@ function WorkExperience({}: Props) {
       ],
     },
     {
+      id: "3",
       title: "Software Development Engineer Intern",
       company: "DTEN",
       startTime: "June 2020",
@@ -53,7 +56,7 @@ function WorkExperience({}: Props) {
 
       <div className="h-max w-full flex space-x-5 overflow-auto overflow-x-scroll xl:overflow-hidden justify-evenly p-10 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
         {experiences.map((experience) => (
-          <ExperienceCard experience={experience} />
+          <ExperienceCard key={experience.id} experience={experience} />
         ))}
       </div>
     </motion.div>

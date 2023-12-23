@@ -1,4 +1,5 @@
 type Experience = {
+  id: string;
   title: string;
   company: string;
   startTime: string;

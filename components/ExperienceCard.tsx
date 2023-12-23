@@ -51,8 +51,8 @@ function ExperienceCard({ experience }: Props) {
           {experience.startTime} - {experience.endTime}
         </p>
         <ul className="list-disc space-y-4 ml-5 text-lg">
-          {experience.summary.map((point) => (
-            <li>{point}</li>
+          {experience.summary.map((point, i) => (
+            <li key={i}>{point}</li>
           ))}
         </ul>
       </div>
